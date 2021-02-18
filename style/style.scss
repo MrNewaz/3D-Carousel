@@ -16,6 +16,10 @@ body {
   text-shadow: -1px -1px 4px rgba(0, 0, 0, 0.35);
   filter: dropshadow(color=#000000, offx=1, offy=1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   font-family: "Righteous", cursive;
@@ -48,12 +52,11 @@ h1 {
 
 #contentContainer {
   position: absolute;
-  margin-left: -500px;
-  margin-top: -500px;
   left: 50%;
   top: 50%;
   width: 1000px;
   height: 1000px;
+  transform: translate(-50%, -50%);
 }
 
 #carouselContainer {

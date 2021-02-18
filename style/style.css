@@ -17,6 +17,19 @@ body {
   -webkit-filter: dropshadow(color=#000000, offx=1, offy=1);
           filter: dropshadow(color=#000000, offx=1, offy=1);
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -50,12 +63,12 @@ h1 {
 
 #contentContainer {
   position: absolute;
-  margin-left: -500px;
-  margin-top: -500px;
   left: 50%;
   top: 50%;
   width: 1000px;
   height: 1000px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #carouselContainer {
